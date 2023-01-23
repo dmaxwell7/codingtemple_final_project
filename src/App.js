@@ -6,10 +6,23 @@ import ExerciseDetail from './pages/ExerciseDetail';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import LoginButton from './components/LoginButton';
+import LogoutButton from './components/LogoutButton';
+import Profile from './components/Profile';
+import { useAuth0 } from '@auth0/auth0-react';
+
 
 
 const App = () => {
+
+  const { isLoading } = useAuth0();
+  if (isLoading) return <div>Loading...</div>
+
   return (
+  <>
+    <LoginButton />
+    <LogoutButton />
+    <Profile />
     <Box width="400px" sx={{ width: { xl: '1488px' }}} m="auto">
       <Navbar />
       <Routes>
@@ -18,7 +31,17 @@ const App = () => {
       </Routes>
       <Footer />
     </Box>
+  </>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+

@@ -11,7 +11,7 @@ const Exercisecard = ({ exercise }) => {
         <Stack direction='row'>
           <Button sx={{ ml:'21px', color: '#fff', background: '#ffa9a9', fontSize: '14px', borderRadius:'20px', textTransform: 'capitalize'}}>
             {exercise.bodyPart}
-            {/* check what its nt show */}
+            {/* check why its nt show */}
           </Button>
           <Button sx={{ ml:'21px', color: '#fff', background: '#fcc757', fontSize: '14px', borderRadius:'20px', textTransform: 'capitalize'}}>
             {exercise.target}
