@@ -7,9 +7,6 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// const domain = 'dev-4bo5gb6vta37110o.us.auth0.com'
-// const clientId ='efZG7Tm8u0DV5hReLbWXacg8NwUdNaju'
-
 const domain= process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId= process.env.REACT_APP_AUTH0_CLIENT_ID;
 
